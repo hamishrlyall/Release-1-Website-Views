@@ -1,0 +1,56 @@
+{
+  //PostCard
+  "postcard": [
+    { "name": "Charles Lilley" },
+    { "profilephoto": src="~/Images/profile_photo_u17.png" },
+    { "born": "3 January 1901 Tocumwal, NSW" },
+    { "fate": "Returned to Australia 1 November, Died 16 June 1982, Heidelberg" },
+    { "service": "Field Artillery Brigade 8, Battery 29" }
+  ],
+
+  //SlideshowContent#1
+  "slideshowContent1": [
+    { "slidetext": "Charles ‘Charlie’ Harold Lilley was born in Armadale on 3 July, 1892. Charlie worked as a clerk and played for the Melbourne Football Club from 1913-1915 until he was enlisted into the Military. Charles embarked on 20 May 1916 and returned the following year on 1 November 1917. Lilley returned to the Melbourne Football Club in 1919 and played until 1925 as both a defender and a midfielder. Charles finished his career with 132 games played. Lilley died on 16 June 1982 at the age of 89.  He has a plaque in the Victorian Garden of Remembrance." },
+    { "mediacontent": "Images/u20.png" }
+  ],
+
+  //SlideshowContent#2
+  "slideshowContent2": [
+    { "slidetext": "Charles Lilley was born on 3 July 1892 in Armadale." },
+    { "mediacontent": "Images/First Year Map Content.png" }
+  ],
+
+  //SlideshowContent#3
+  "slideshowContent3": [
+    { "slidetext": "Charlie Lilley was a regular at the Melbourne Football Club before the war. He was known as a clever, pacy, and calm centreman. Unfortunately Charlies early career was at an uncompetitive Melbourne who finished 9th in his first season." },
+    { "mediacontent": "Images/u20.png" }
+  ],
+
+  //SlideshowContent#4
+  "slideshowContent4": [
+    { "slidetext": "The 1915 season would go on to be Charlies most successful as a player with Melbourne finishing 4th and earning a place in the finals. It was also the year Charlie enlisted in the Military. Charlie played out the VFL season while completing the camp. The following year the club went into recess and Charlie embarked, travelling to Europe." },
+    { "mediacontent": "Images/fourth_year_image_content_u76.jpg" }
+  ],
+
+  //SlideshowContent#5
+  "slideshowContent5": [
+    { "slidetext": "Charlie was still able to play football during the war. In October 1916 he played in an Exhibition game for servicemen in London in front of the Prince of Whales, King Manuel of Portugal, and 8,000 other onlookers. Charlie played for the 3rd Division AIF taking on the Combined Training Units in London. The teams were made up of players from leagues around Australia. Gerald Brosnan of The Winner reported on the match and the local reactions." },
+    { "mediacontent": "Images/4007a.AIFmatch.png" }
+  ],
+
+  //SlideshowContent#6
+  "slideshowContent6": [
+    { "slidetext": "Lilley was seriously wounded in France in June 1917, and was discharged as medically unfit with leg injuries and a punctured lung." },
+  ],
+
+  //SlideshowContent#7
+  "slideshowContent7": [
+    { "slidetext": "Lilley returned to the VFL as vice-captain of Melbourne in 1919." },
+  ],
+
+  //SlideshowContent#8
+  "slideshowContent8": [
+    { "slidetext": "Lilley retired in 1925 after playing 132 games." },
+  ]
+
+}

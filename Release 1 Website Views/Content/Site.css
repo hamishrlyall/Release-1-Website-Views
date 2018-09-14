@@ -32,6 +32,10 @@ p {
     font-kerning: normal;
 }
 
+img {
+    margin: 0px;
+}
+
 /*Site Title 'MY SCHOOL REMEMBERS*/
 #u72 {
     border-width: 0px;

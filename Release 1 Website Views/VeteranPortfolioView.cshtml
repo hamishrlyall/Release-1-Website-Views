@@ -87,60 +87,95 @@
             </div>
     </header>
     <!-- PostCard -->
-        <div class="ax_default" id="postcard">
-            <!-- Name Heading (Rectangle) -->
-            <div id="u10" data-label="Name Heading">
-                <div id="u10_text" class="text ">
-                    <h1>Charles Lilley</h1><p>
-                </div>
-                <!-- Profile Photo (Image) -->
-                <div id="u17" class="ax_default image" data-label="Profile Photo">
-                    <img id="u17_img" class="img " src="~/Images/profile_photo_u17.png" />
-                </div>
+    <div class="ax_default" id="postcard">
+        <h2>Create Object from JSON String</h2>
+
+        <p id="demo"></p>
+        <script>
+            var text = '{"postcard":[' +
+                '{"name":"Charles Lilley", "born":"3 January 1901 Tocumwal, NSW", "fate": "Returned to Australia 1 November, Died 16 June 1982, Heidelberg", "service": "Field Artillery Brigade 8, Battery 29" }]}';
+            obj = JSON.parse(text);
+            document.getElementById("demo").innerHTML =
+                obj.postcard[0].name + " " + obj.postcard[0].born + " " + obj.postcard[0].fate + " " + obj.postcard[0].service;
+            $(document).ready(function () {
+                var urldata = [
+                    { "url": "https://i.redd.it/hqculc19byl11.jpg" }];
+                $.each(urldata, function (index, value) {
+                    $("#demo").append("<img src='" + value.url + "' />")
+                });
+            });
+
+            /*  var data = {
+               "postcard": [{
+                   "profilephoto": ""
+               }]
+            };        
+          data.images.forEach(function (obj) {
+              var img = new Image();
+              img.src = obj.profilephoto;
+              img.setAttribute("class", "profilephoto");
+              document.getElementById("img-container").appendChild(img);
+            //obj.postcard[0].profilephoto;
+            });*/
+        </script>
+        
+
+
+        <!--
+    <!-- Name Heading (Rectangle) --
+        <div id="u10" data-label="Name Heading">
+            <div id="u10_text" class="text ">
+                <h1>Charles Lilley</h1><p>
             </div>
-            <!-- Born Label (Rectangle) -->
-            <div id="u16" class="ax_default label" data-label="Born Label">
-                <div id="u16_div" class=""></div>
-                <div id="u16_text" class="text ">
-                    <p><span>Born:</span></p>
-                </div>
-                <!-- Born Content Label (Rectangle) -->
-                <div id="u11" class="ax_default label" data-label="Born Content Label">
-                    <div id="u11_div" class=""></div>
-                    <div id="u11_text" class="text ">
-                        <p><span>3 January 1901</span></p><p><span>Tocumwal, NSW</span></p>
-                    </div>
-                </div>
+            <!-- Profile Photo (Image) --
+            <div id="u17" class="ax_default image" data-label="Profile Photo">
+                <img id="u17_img" class="img " src="~/Images/profile_photo_u17.png" />
             </div>
-            <!-- Fate Label (Rectangle) -->
-            <div id="u15" class="ax_default label" data-label="Fate Label">
-                <div id="u15_div" class=""></div>
-                <div id="u15_text" class="text ">
-                    <p><span>Fate:</span></p>
-                </div>
-                <!-- Fate Content Label (Rectangle) -->
-                <div id="u12" class="ax_default label" data-label="Fate Content Label">
-                    <div id="u12_div" class=""></div>
-                    <div id="u12_text" class="text ">
-                        <p><span>Returned to Australia 1 November, 1917,</span></p><p><span> Died 16 June 1982, Heidelberg</span></p>
-                    </div>
-                </div>
+        </div>
+        <!-- Born Label (Rectangle) --
+        <div id="u16" class="ax_default label" data-label="Born Label">
+            <div id="u16_div" class=""></div>
+            <div id="u16_text" class="text ">
+                <p><span>Born:</span></p>
             </div>
-            <!-- Service Label (Rectangle) -->
-            <div id="u14" class="ax_default label" data-label="Service Label">
-                <div id="u14_div" class=""></div>
-                <div id="u14_text" class="text ">
-                    <p><span>Service:</span></p>
-                </div>
-                <!-- Service Content Label (Rectangle) -->
-                <div id="u13" class="ax_default label" data-label="Service Content Label">
-                    <div id="u13_div" class=""></div>
-                    <div id="u13_text" class="text ">
-                        <p><span>Field Artillery Brigade 8,</span></p><p><span> Battery 29</span></p>
-                    </div>
+            <!-- Born Content Label (Rectangle) --
+            <div id="u11" class="ax_default label" data-label="Born Content Label">
+                <div id="u11_div" class=""></div>
+                <div id="u11_text" class="text ">
+                    <p><span>3 January 1901</span></p><p><span>Tocumwal, NSW</span></p>
                 </div>
             </div>
         </div>
+        <!-- Fate Label (Rectangle) --
+        <div id="u15" class="ax_default label" data-label="Fate Label">
+            <div id="u15_div" class=""></div>
+            <div id="u15_text" class="text ">
+                <p><span>Fate:</span></p>
+            </div>
+            <!-- Fate Content Label (Rectangle) --
+            <div id="u12" class="ax_default label" data-label="Fate Content Label">
+                <div id="u12_div" class=""></div>
+                <div id="u12_text" class="text ">
+                    <p><span>Returned to Australia 1 November, 1917,</span></p><p><span> Died 16 June 1982, Heidelberg</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Service Label (Rectangle) --
+        <div id="u14" class="ax_default label" data-label="Service Label">
+            <div id="u14_div" class=""></div>
+            <div id="u14_text" class="text ">
+                <p><span>Service:</span></p>
+            </div>
+            <!-- Service Content Label (Rectangle) --
+            <div id="u13" class="ax_default label" data-label="Service Content Label">
+                <div id="u13_div" class=""></div>
+                <div id="u13_text" class="text ">
+                    <p><span>Field Artillery Brigade 8,</span></p><p><span> Battery 29</span></p>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
     <!-- Slideshow container -->
         <div id="slideshow" class="slideshow-container">
             <!-- Next and previous buttons -->
