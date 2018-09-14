@@ -1,8 +1,4 @@
-﻿html {
-    background-color: #e2e2e2;
-    margin: 0;
-    padding: 0;
-}
+﻿
 
 body {
     margin: 0px;
@@ -12,14 +8,30 @@ body {
     background-attachment: scroll;
     background-size: 3341px 2709px;
     border-top: solid 10px #000;
-    position: static;
+    position: inherit;
     left: auto;
     text-align: left;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
+a {
+    color: inherit;
+}
+
+p {
+    margin: 0px;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-size: inherit;
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern=1";
+    font-kerning: normal;
+}
+
 /*Site Title 'MY SCHOOL REMEMBERS*/
 #u72 {
     border-width: 0px;
@@ -39,6 +51,7 @@ body {
     position: absolute;
     left: 0px;
     top: 0px;
+    font-size: 48px;
     width: 641px;
     word-wrap: break-word;
 }
@@ -121,8 +134,7 @@ body {
 #u75_text {
     border-width: 0px;
     position: absolute;
-    left: 2px;
-    top: 7px;
+    top: -10px;
     width: 114px;
     word-wrap: break-word;
 }
@@ -155,8 +167,7 @@ body {
 #u76_text {
     border-width: 0px;
     position: absolute;
-    left: 2px;
-    top: 7px;
+    top: -10px;
     width: 114px;
     word-wrap: break-word;
 }
@@ -189,8 +200,7 @@ body {
 #u77_text {
     border-width: 0px;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    top: -10px;
     width: 114px;
     word-wrap: break-word;
 }
@@ -247,8 +257,7 @@ body {
 #u79_text {
     border-width: 0px;
     position: absolute;
-    left: 2px;
-    top: 7px;
+    top: -10px;
     width: 114px;
     word-wrap: break-word;
 }
@@ -326,10 +335,10 @@ body {
     width: auto;
     margin-top: 22px;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
-    transition: linear;
+    transition: none;
     border-radius: 0 3px 3px 0;
 }
 
@@ -341,7 +350,7 @@ body {
 
 /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
+        background-color: saddlebrown;
     }
 
 /* Caption text */
@@ -367,7 +376,6 @@ body {
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
-    position: center;
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -511,14 +519,6 @@ h5, h6 {
 
 header .content-wrapper {
     padding-top: 20px; 
-}
-
-footer {
-    position: absolute;
-    bottom: 0px;
-    clear: both;
-    font-size: .8em;
-    height: 100px;
 }
 
 
@@ -1138,12 +1138,17 @@ tr.pager td {
     footer .float-right {
         float: none;
     }
-
     footer {
+        position: absolute;
+        bottom: 0px;
+        clear: both;
+        font-size: .8em;
+        height: 100px;
         text-align: center;
         height: auto;
         padding: 10px 0;
     }
+
 
         footer p {
             margin: 0;

@@ -1,23 +1,4 @@
-﻿/* so the window resize fires within a frame in IE7 */
-html, body {
-    height: 100%;
-}
-
-a {
-    color: inherit;
-}
-
-p {
-    margin: 0px;
-    text-rendering: optimizeLegibility;
-    font-feature-settings: "kern" 1;
-    -webkit-font-feature-settings: "kern";
-    -moz-font-feature-settings: "kern";
-    -moz-font-feature-settings: "kern=1";
-    font-kerning: normal;
-}
-
-iframe {
+﻿iframe {
     background: #FFFFFF;
 }
 
