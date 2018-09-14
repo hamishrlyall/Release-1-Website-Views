@@ -25,7 +25,7 @@ p {
     margin: 0px;
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern" 1;
-    font-size: inherit;
+    font-size: 18px;
     -webkit-font-feature-settings: "kern";
     -moz-font-feature-settings: "kern";
     -moz-font-feature-settings: "kern=1";
@@ -279,6 +279,7 @@ p {
     border-width: 0px;
     position: absolute;
     left: 0px;
+    top: 0px;
 }
 #u16 {
     border-width: 0px;
@@ -310,7 +311,9 @@ p {
 * {
     box-sizing: border-box
 }
+#u19 {
 
+}
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000000px;
